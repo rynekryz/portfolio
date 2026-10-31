@@ -1,0 +1,47 @@
+---
+import "@fontsource-variable/geist";
+import "@fontsource-variable/geist-mono";
+import "../styles/global.css";
+import { profile } from "../data/site";
+
+const { title = profile.title } = Astro.props;
+const url = Astro.site?.href ?? "https://rynekryz.github.io/";
+const avatar = profile.avatarUrl;
+const base = import.meta.env.BASE_URL;
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{title}</title>
+    <meta name="description" content={profile.description} />
+    <meta name="author" content={profile.name} />
+    <meta name="theme-color" content="#000000" />
+    <link rel="canonical" href={url} />
+    <link rel="icon" type="image/svg+xml" href={`${base}/favicon.svg`} />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={profile.description} />
+    <meta property="og:url" content={url} />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:site_name" content={profile.name} />
+    <meta property="og:image" content={avatar} />
+    <meta property="og:image:alt" content={`${profile.name}'s avatar`} />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content={title} />
+    <meta name="twitter:description" content={profile.description} />
+    <meta name="twitter:image" content={avatar} />
+    <script is:inline>
+      (function () {
+        var saved = localStorage.getItem("theme");
+        var dark = saved ? saved === "dark" : window.matchMedia("(prefers-color-scheme: dark)").matches;
+        document.documentElement.dataset.theme = dark ? "dark" : "light";
+      })();
+    </script>
+  </head>
+  <body>
+    <slot />
+  </body>
+</html>
