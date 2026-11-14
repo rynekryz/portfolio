@@ -3,6 +3,11 @@
 <h1>rynekryz.github.io</h1>
 <p>My personal website.</p>
 </div>
+<p align="center">
+  <a href="https://github.com/rynekryz/portfolio/stargazers"><img src="https://img.shields.io/github/stars/rynekryz/portfolio?style=flat&logo=github&labelColor=5F5E5E&color=5F5E5E&logoColor=white&sort=semver" alt="GitHub stars" height="30"/></a>
+  <img src="assets/badges/astro.svg" alt="Astro"/>
+  <img src="assets/badges/css.svg" alt="CSS"/>
+</p>
 
 Live at https://rynekryz.github.io
 
