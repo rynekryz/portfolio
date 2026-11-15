@@ -1,10 +1,14 @@
 import {
   siKotlin,
+  siJetpackcompose,
   siJavascript,
   siTypescript,
-  siPython,
+  siRust,
   siAstro,
+  siCplusplus,
   siNodedotjs,
+  siGradle,
+  siFastlane,
   siGit,
   siGithubactions,
   siAndroidstudio,
@@ -23,17 +27,18 @@ export const profile = {
   name: "Ryne",
   login,
   title: "Ryne",
-  description: "Developer and designer. Mostly frontend, into Material Design.",
+  description:
+    "Android & web developer. Privacy first, offline by default. Material 3 Expressive & One UI.",
   greeting: "Hi, I'm",
   subtitle: "I build",
   typing: ["interfaces", "Android apps", "websites", "small useful tools"],
   avatarUrl: `${githubUrl}.png`,
   location: "Earth",
-  languages: "JavaScript · Kotlin",
+  languages: "Kotlin · Astro · Rust",
   about: [
-    "Developer and designer. Mostly frontend.",
-    "Into Material Design and the details that make an interface feel right.",
-    "Loves simplicity.",
+    "Android & web developer.",
+    "Privacy first, offline by default.",
+    "Into Material 3 Expressive and One UI, and the details that make an interface feel right.",
     "Always building something small that solves a real annoyance.",
   ],
 };
@@ -48,10 +53,12 @@ export const stack = [
     title: "Main",
     items: [
       { label: "Kotlin", icon: siKotlin },
+      { label: "Jetpack Compose", icon: siJetpackcompose },
       { label: "JavaScript", icon: siJavascript },
       { label: "TypeScript", icon: siTypescript },
-      { label: "Python", icon: siPython },
       { label: "Astro", icon: siAstro },
+      { label: "Rust", icon: siRust },
+      { label: "C++", icon: siCplusplus },
     ],
   },
   {
@@ -59,6 +66,8 @@ export const stack = [
     items: [
       { label: "Git", icon: siGit },
       { label: "Node.js", icon: siNodedotjs },
+      { label: "Gradle", icon: siGradle },
+      { label: "Fastlane", icon: siFastlane },
       { label: "GitHub Actions", icon: siGithubactions },
       { label: "Android Studio", icon: siAndroidstudio },
       { label: "Zed", icon: siZedindustries },
@@ -75,6 +84,27 @@ export const stack = [
 
 export const projects = [
   {
+    name: "sniffsniff",
+    url: "https://github.com/rynekryz/sniffsniff",
+    description:
+      "Network traffic monitor for Android. See what every app is doing, on your device only.",
+    tags: ["Kotlin", "Jetpack Compose", "Material 3 Expressive", "Android"],
+  },
+  {
+    name: "exiless",
+    url: "https://github.com/rynekryz/exiless",
+    description:
+      "Remove metadata from photos and videos, lossless and fully offline.",
+    tags: ["Kotlin", "Jetpack Compose", "Android"],
+  },
+  {
+    name: "melissm",
+    url: "https://github.com/rynekryz/melissm",
+    description:
+      "A Material You expressive music streaming app. It plays music, literally. What else would it do.",
+    tags: ["Astro", "Rust", "TypeScript", "GStreamer", "Linux"],
+  },
+  {
     name: "rynotes",
     url: "https://github.com/rynekryz/rynotes",
     description:
@@ -82,9 +112,22 @@ export const projects = [
     tags: ["Kotlin", "Jetpack Compose", "Android"],
   },
   {
+    name: "rynemaps",
+    url: "https://github.com/rynekryz/rynemaps",
+    description:
+      "Open-source maps app for Android, powered by OpenStreetMap. No API keys. No accounts. No tracking.",
+    tags: ["Kotlin", "MapLibre", "OpenStreetMap", "Android"],
+  },
+  {
+    name: "portfolio",
+    url: "https://github.com/rynekryz/portfolio",
+    description: "My personal website.",
+    tags: ["Astro", "TypeScript", "CSS"],
+  },
+  {
     name: "webgl-raytracing-test",
     url: "https://github.com/rynekryz/webgl-raytracing-test",
-    description: "Some glsl stuff.",
+    description: "Some GLSL stuff.",
     tags: ["JavaScript", "WebGL", "GLSL"],
   },
   {
@@ -93,13 +136,6 @@ export const projects = [
     description:
       "Student dorm security device. This repo contains the Android app, paired with an ESP32 door monitor.",
     tags: ["Kotlin", "Material 3", "JavaScript", "ESP32", "Google Sheets"],
-  },
-  {
-    name: "rynemaps",
-    url: "https://github.com/rynekryz/rynemaps",
-    description:
-      "Open-source maps app for Android, powered by OpenStreetMap. No API keys. No accounts. No tracking.",
-    tags: ["Kotlin", "OpenStreetMap", "Android"],
   },
 ];
 
