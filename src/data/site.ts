@@ -111,8 +111,8 @@ export const projects = [
     tags: ["Kotlin", "Jetpack Compose", "Android"],
   },
   {
-    name: "rynemaps",
-    url: "https://github.com/rynekryz/rynemaps",
+    name: "graphyte",
+    url: "https://github.com/rynekryz/graphyte",
     description:
       "Open-source maps app for Android, powered by OpenStreetMap. No API keys. No accounts. No tracking.",
     tags: ["Kotlin", "MapLibre", "OpenStreetMap", "Android"],
