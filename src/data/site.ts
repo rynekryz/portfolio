@@ -27,8 +27,7 @@ export const profile = {
   name: "Ryne",
   login,
   title: "Ryne",
-  description:
-    "Android & web developer. Privacy first, offline by default. Material 3 Expressive & One UI.",
+  description: "Developer and designer. Mostly frontend, into Material Design.",
   greeting: "Hi, I'm",
   subtitle: "I build",
   typing: ["interfaces", "Android apps", "websites", "small useful tools"],
@@ -36,9 +35,9 @@ export const profile = {
   location: "Earth",
   languages: "Kotlin · Astro · Rust",
   about: [
-    "Android & web developer.",
-    "Privacy first, offline by default.",
-    "Into Material 3 Expressive and One UI, and the details that make an interface feel right.",
+    "Developer and designer. Mostly frontend.",
+    "Into Material Design and the details that make an interface feel right.",
+    "Loves simplicity.",
     "Always building something small that solves a real annoyance.",
   ],
 };
